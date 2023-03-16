@@ -7,10 +7,10 @@ body {
     width: 100%;
 }
 
-.header .menu {
+.header .menu ul{
     background-color: #1a1e22;
     text-align: center;
-    position: fixed;
+    position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -36,47 +36,60 @@ body {
 .header .menu .icone:hover {
 	transform: scale(1.2);
 }
+.header .menu .sublinhado {
+    position: relative;
+    text-decoration: none;
+}
+
+.header .menu .sublinhado::after {
+    background: #f00;
+    background: linear-gradient(to right, transparent 0%, rgb(209, 173, 53) 50%, transparent 100%);  
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+ }
 
 .container {
-    width: 100vw;
-    height: 100vh;
     background: #1a1e22;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: row;  
     color: white;
+	justify-content: center;
 }
 
 .vectorlefttop{
-    position: absolute;
+    position: relative;
     margin-top: 0%;
     margin-left: 5%;
+    z-index: 1;
 }
-.vectorleftbot{
+/*.vectorleftbot{
     position: fixed;
 
 }
 .vectorrighttup{
     position: fixed;
 
-}
+}*/
 .vectorrightbot{
-    position: absolute;
-    margin-top: 30%;
-    margin-left: 80%;
+    position: relative;
+    margin-top: 0%;
+    margin-left: 75%;
+    z-index: -1;
 }
 
 .informacoes{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 5%;
     height: 50%;
     width: 50%;
     background-color:#1a1e22;
-    min-width: 50%;
-    min-height: 0%;
     align-items: center;
-    margin-right: 15%;
+    margin-top: 0%;
   }
 
 .foto{
@@ -85,13 +98,9 @@ body {
     width: 100px;
     height: 150px;
     overflow: hidden;
-    position: relative;
-    margin-left: 15%;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 3%;
+    z-index: 1;
 }
 
-.foto img {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
