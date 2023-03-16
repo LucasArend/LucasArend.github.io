@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background: #6C7A89;
+    background: #1a1e22;
 }
 
 .header {
@@ -8,7 +8,7 @@ body {
 }
 
 .header .menu {
-    background-color: #175ba3;
+    background-color: #1a1e22;
     text-align: center;
     position: fixed;
 	display: flex;
@@ -40,11 +40,31 @@ body {
 .container {
     width: 100vw;
     height: 100vh;
-    background: #6C7A89;
+    background: #1a1e22;
     display: flex;
     flex-direction: row;
     align-items: center;
-    }
+    color: white;
+}
+
+.vectorlefttop{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 5%;
+}
+.vectorleftbot{
+    position: fixed;
+
+}
+.vectorrighttup{
+    position: fixed;
+
+}
+.vectorrightbot{
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 80%;
+}
 
 .informacoes{
     display: flex;
@@ -52,7 +72,7 @@ body {
     gap: 5%;
     height: 50%;
     width: 50%;
-    background-color:#ac5b5bea;
+    background-color:#1a1e22;
     min-width: 50%;
     min-height: 0%;
     align-items: center;
