@@ -7,7 +7,9 @@ body {
     width: 100%;
     margin-top: 50px;
 }
-
+/* .header .abas{
+    padding-left: 28%;
+}
 .header .menu ul{
     text-align: center;
     position: relative;
@@ -26,17 +28,62 @@ body {
     color: #FFFFFF;
     padding: 30px 10px;
 }
+*/
+.mynav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    
+}
+  
+.mynav li:not(:last-child) {
+    margin-right: 20px;
+}
 
-.header .menu .icone {
+.mynav .abas {
+margin-right: 100px;
+}
+
+.mynav .abas a {
+    display: block;
+    font-size: 20px;
+    color: rgb(248, 243, 243);
+    text-decoration: none;
+    padding: 7px 15px;
+}
+  
+.target {
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    z-index: -1;
+    transform: translateX(-60px);
+}
+
+.mynav .alinhamentoicone{
+    position: absolute;
+    margin-left: 75%;
+}
+
+
+.mynav .icone {
 	width: 30px;
 	filter: invert(1);
 	transition: 0.3s ease-in-out;
+    opacity: 0.4;
+    float: right;
 }
 
-.header .menu .icone:hover {
+.mynav .icone:hover {
 	transform: scale(1.2);
 }
-.header .menu .sublinhado {
+
+.mynav .abas a,
+.target {
+    transition: all .35s ease-in-out;
+}
+
+/* .header .menu .sublinhado {
     position: relative;
     text-decoration: none;
 }
@@ -50,7 +97,7 @@ body {
     left: 0;
     height: 2px;
     width: 100%;
- }
+ }*/
 
 .container {
     display: flex;
@@ -90,7 +137,7 @@ body {
     height: 50%;
     width: 50%;
     align-items: center;
-    margin-top: 0%;
+    margin-top: 5%;
 }
 
 .informacoes p {
@@ -99,6 +146,14 @@ body {
     padding: 5%;
     border-image: 
     linear-gradient(transparent 0%, rgb(209, 173, 53) 50%, transparent 100%) 0 0 0 100;
+}
+
+.informacoes h1 {
+    margin-bottom: -30px;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 .foto{
