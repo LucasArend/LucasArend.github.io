@@ -7,6 +7,7 @@ body {
     width: 100%;
     margin-top: 50px;
 }
+/*header antigo sem animaçoes*/
 /* .header .abas{
     padding-left: 28%;
 }
@@ -29,6 +30,23 @@ body {
     padding: 30px 10px;
 }
 */
+/* .header .menu .sublinhado {
+    position: relative;
+    text-decoration: none;
+}
+
+.header .menu .sublinhado::after {
+    background: #f00;
+    background: linear-gradient(to right, transparent 0%, rgb(209, 173, 53) 50%, transparent 100%);  
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+ }*/
+
+/*Header animado*/
 .mynav ul {
     display: flex;
     justify-content: center;
@@ -83,35 +101,19 @@ margin-right: 100px;
     transition: all .35s ease-in-out;
 }
 
-/* .header .menu .sublinhado {
-    position: relative;
-    text-decoration: none;
-}
-
-.header .menu .sublinhado::after {
-    background: #f00;
-    background: linear-gradient(to right, transparent 0%, rgb(209, 173, 53) 50%, transparent 100%);  
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 100%;
- }*/
-
 .container {
     display: flex;
     flex-direction: row;  
     color: white;
-	justify-content: center;
     /*border-image: url('../imagens/desmaiadotopleft.png') 45 / 45px ;*/
 }
 
 .vectorlefttop{
     position: absolute;
     top: 0;
-    margin-left: 10%;
-    z-index: 1;
+    margin-left: 0%;
+    margin-top: 0%;
+    z-index: -1;
 }
 /*.vectorleftbot{
     position: fixed;
@@ -124,10 +126,10 @@ margin-right: 100px;
 .vectorrightbot{
     position: absolute;
     margin-top: 0%;
-    margin-right: 10%;
+    margin-right: 0%;
     right: 0px;
-    bottom: 50px;
-    z-index: 1;
+    bottom: 0%;
+    z-index: -1;
 }
 
 .informacoes{
@@ -138,6 +140,7 @@ margin-right: 100px;
     width: 50%;
     align-items: center;
     margin-top: 5%;
+    margin-left: 25%;
 }
 
 .informacoes p {
