@@ -103,9 +103,20 @@ margin-right: 100px;
 
 .container {
     display: flex;
-    flex-direction: row;  
+    flex-direction: column;  
     color: white;
     /*border-image: url('../imagens/desmaiadotopleft.png') 45 / 45px ;*/
+}
+
+.containergrid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-flow: column;
+    background-color: aquamarine;
+    border: 5px solid black;
+}
+.color{
+    background-color: aliceblue;
 }
 
 .vectorlefttop{
@@ -115,6 +126,8 @@ margin-right: 100px;
     margin-top: 0%;
     z-index: -1;
 }
+
+/*caso queira trocar posição das bordas*/
 /*.vectorleftbot{
     position: fixed;
 
@@ -124,12 +137,8 @@ margin-right: 100px;
 
 }*/
 .vectorrightbot{
-    position: absolute;
-    margin-top: 0%;
-    margin-right: 0%;
-    right: 0px;
-    bottom: 0%;
-    z-index: -1;
+    position: relative;
+    float: right;
 }
 
 .informacoes{
@@ -139,7 +148,6 @@ margin-right: 100px;
     height: 50%;
     width: 50%;
     align-items: center;
-    margin-top: 5%;
     margin-left: 25%;
 }
 
@@ -149,6 +157,7 @@ margin-right: 100px;
     padding: 5%;
     border-image: 
     linear-gradient(transparent 0%, rgb(209, 173, 53) 50%, transparent 100%) 0 0 0 100;
+    display: flex;
 }
 
 .informacoes h1 {
@@ -159,15 +168,50 @@ margin-right: 100px;
     monospace;
 }
 
+.sobremim{
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    position: relative;
+}
+
+.sobremim h1{
+    text-align: center;
+}
+
+.sobremim p{
+    margin-left: 400px;
+    max-width: 500px;
+}
+/*
+.sobremim p {
+    border-width: 3px;
+    border-style: solid;
+    padding: 5%;
+    border-image: 
+    linear-gradient(transparent 0%, rgb(209, 173, 53) 50%, transparent 100%) 0 0 0 100;
+    display: flex;
+    font-size: 30px;
+}
+
+.sobremim h1 {
+    margin-bottom: -30px;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*/
 .foto{
     background-color: #aaa;
     border-radius: 50%;
-    width: 100px;
-    height: 150px;
+    width: 250px;
+    height: 350px;
+    margin-left: 100px;
+    margin-top: -50px;
     overflow: hidden;
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 3%;
-    z-index: 1;
+    position: relative;
+    float:left;
 }
 
