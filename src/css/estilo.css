@@ -183,6 +183,7 @@ margin-right: 100px;
 .sobremim p{
     margin-left: 400px;
     max-width: 500px;
+    margin-top: 25px;
 }
 /*
 .sobremim p {
@@ -209,7 +210,6 @@ margin-right: 100px;
     width: 250px;
     height: 350px;
     margin-left: 100px;
-    margin-top: -50px;
     overflow: hidden;
     position: relative;
     float:left;

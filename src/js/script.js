@@ -53,3 +53,10 @@
   window.addEventListener("resize", resizeFunc);
 
 })();
+
+window.sr = ScrollReveal();
+sr.reveal('h1,p,.foto', {
+  origin:'left',
+  duration: 2000
+});
+/*sr.reveal('.t', {duration: 2500});*/
