@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background: #1a1e22ee;
+    background: #1a1e22d2;
 }
 
 .header {
@@ -158,6 +158,7 @@ margin-right: 100px;
     border-image: 
     linear-gradient(transparent 0%, rgb(209, 173, 53) 50%, transparent 100%) 0 0 0 100;
     display: flex;
+    text-align: justify;
 }
 
 .informacoes h1 {
@@ -177,6 +178,10 @@ margin-right: 100px;
 }
 
 .sobremim h1{
+    text-align: center;
+}
+
+.sobremim h5{
     text-align: center;
 }
 
@@ -215,3 +220,42 @@ margin-right: 100px;
     float:left;
 }
 
+article{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+article ul{
+   font-size: 0; /* elimina espaços entre as li */
+
+}
+
+article ul li img{
+   width: 70%; /* ajusta a largura da imagem dentro da li */
+   display: block; /* convertendo para block elimina espaço natural abaixo da imagem */
+}
+
+article ul, article ul li{ /* remove espaços e o bullet da ul e das li */
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+article ul li{
+   display: inline-block;
+   width: 50%; /* divide a largura por 4 */
+   box-sizing: border-box; /* restringe o padding à área da li */
+   text-align: center; /* centraliza o conteúdo */
+   padding: 5px; /* espaçamento interno entre o conteúdo e a borda da li */
+   font-size: 16px; /* ajusta o tamanho da fonte nas li com o tamanho padrão */
+   vertical-align: top; /* alinha as li no topo da linha */
+}
+
+.textoimg{
+    position: absolute;
+    text-align: center;
+    background-color: wheat;
+    bottom: 0;
+    left: 0;
+    color: aliceblue;
+}

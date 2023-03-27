@@ -55,7 +55,7 @@
 })();
 
 window.sr = ScrollReveal();
-sr.reveal('h1,p,.foto', {
+sr.reveal('h1,p,.foto,h5', {
   origin:'left',
   duration: 2000
 });
