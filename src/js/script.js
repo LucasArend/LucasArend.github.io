@@ -55,8 +55,30 @@
 })();
 
 window.sr = ScrollReveal();
-sr.reveal('h1,p,.foto,h5', {
+sr.reveal('h1,p,.foto,h5,img,span,.alinhamento', {
   origin:'left',
   duration: 2000
 });
 /*sr.reveal('.t', {duration: 2500});*/
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.addEventListener("scroll", function(event) {
+      const animatedBoxes = document.getElementsByClassName("bar");
+      const windowOffsetTop = window.innerHeight + window.scrollY;
+
+      Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
+          const animatedBoxOffsetTop = animatedBox.offsetTop;
+
+          if (windowOffsetTop >= animatedBoxOffsetTop) {
+              addClass(animatedBox, "teste");
+          }
+      });
+  });
+});
+
+function addClass(element, className) {
+  const arrayClasses = element.className.split(" ");
+  if (arrayClasses.indexOf(className) === -1) {
+      element.className += " " + className;
+  }
+}
