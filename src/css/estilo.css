@@ -562,4 +562,17 @@ article ul li{
     background-color: aqua;
     gap:20%;
   }
+
+.certificados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.imgcertificado{
+    padding: 20px;
+    height: 300px;
+}
   
