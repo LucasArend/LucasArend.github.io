@@ -185,7 +185,6 @@ margin-right: 100px;
 
 .sobremim p{
     margin-left: 400px;
-    max-width: 500px;
     margin-top: 25px;
 }
 /*
@@ -337,11 +336,11 @@ article ul li{
 }
 
 .box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10%;
+    margin-left: 5%;
+    margin-right: 10%;
   }
 
 .box>div{
@@ -556,3 +555,11 @@ article ul li{
     height: 250px;
     width: 250px;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: aqua;
+    gap:20%;
+  }
+  
