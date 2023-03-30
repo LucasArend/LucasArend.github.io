@@ -105,7 +105,6 @@ margin-right: 100px;
     display: flex;
     flex-direction: column;  
     color: white;
-    /*border-image: url('../imagens/desmaiadotopleft.png') 45 / 45px ;*/
 }
 
 
@@ -533,4 +532,27 @@ article ul li{
 .entry .body ul li:before {
   content: "–";
   margin-right: .5em;
+}
+
+.projetoesquerda{
+    padding: 30px;
+    color: white;
+}
+
+.projetoesquerda img{
+    float: left;
+    height: 250px;
+    width: 250px;
+}
+
+.projetodireita{
+    padding: 30px;
+    background: #9784842d;
+    color: white;
+}
+
+.projetodireita img{
+    float: right;
+    height: 250px;
+    width: 250px;
 }
