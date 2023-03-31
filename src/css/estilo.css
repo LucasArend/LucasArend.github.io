@@ -496,28 +496,34 @@ article ul li{
   right: -24px;
   z-index: 99;
 }
+
 .entry .title h3 {
   margin: 0;
   font-size: 120%;
 }
+
 .entry .title p {
   margin: 0;
   font-size: 100%;
 }
+
 .entry .body {
   margin: 0 0 3em;
   float: right;
   width: 66%;
   padding-left: 0px;
 }
+
 .entry .body p {
   line-height: 1.4em;
   margin-left: 10px;
 }
+
 .entry .body p:first-child {
   margin-top: 0;
   font-weight: 400;
 }
+
 .entry .body ul {
   color: #c4c1c1;
   padding-left: 0;
@@ -531,29 +537,6 @@ article ul li{
 .entry .body ul li:before {
   content: "–";
   margin-right: .5em;
-}
-
-.projetoesquerda{
-    padding: 30px;
-    color: white;
-}
-
-.projetoesquerda img{
-    float: left;
-    height: 250px;
-    width: 250px;
-}
-
-.projetodireita{
-    padding: 30px;
-    background: #9784842d;
-    color: white;
-}
-
-.projetodireita img{
-    float: right;
-    height: 250px;
-    width: 250px;
 }
 
 .wrapper {
@@ -575,4 +558,44 @@ article ul li{
     padding: 20px;
     height: 300px;
 }
-  
+
+.projectbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10%;
+    margin-left: 5%;
+    margin-right: 10%;
+    color: white;
+    max-height: fit-content;
+  }
+
+.projectbox>.projetoesquerda p {
+    margin-left: 260px;
+    text-align: justify;
+}
+
+.projetoesquerda img{
+    float: left;
+    height: 250px;
+    width: 250px;
+}
+
+.projectbox>.projetodireita{
+    background: #9784842d;
+
+}
+
+.projectbox>.projetodireita p {
+    margin-right: 260px;
+    text-align: justify;
+}
+
+.projetodireita img{
+    float: right;
+    height: 250px;
+    width: 250px;
+}
+
+.nomeprojeto{
+    text-align: center;
+}

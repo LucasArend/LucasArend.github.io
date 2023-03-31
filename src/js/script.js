@@ -55,7 +55,7 @@
 })();
 
 window.sr = ScrollReveal();
-sr.reveal('p,.foto,img,.alinhamento,.titulo', {
+sr.reveal('p,.foto,img,.alinhamento,.titulo,.body', {
   origin:'left',
   duration: 2000
 });
