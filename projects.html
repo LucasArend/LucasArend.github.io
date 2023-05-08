@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +7,11 @@
     <title>Portifolio de Lucas Arend Maciel</title>
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./src/css/estilo.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./src/css/projectsyle.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="./src/css/responsivo.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./src/css/estilo.css" media="screen" />
 </head>   
-<body>   
+<body>
     <header class="header">
         <nav class="mynav">
             <ul>
@@ -49,44 +49,189 @@
             </ul>
         </nav>
     </header>
-<main>
     <img src="./src/imagens/desmaiadotopleft.png" alt="vetor em cima a esquerda"  class="vectorlefttop">
-    <div class="projectbox">
-        <div class="projetoesquerda">
-            
-            <a href="https://github.com/LucasArend/Ages"><img src="./src/imagens/Ages.png"></a>
-            <p><h1 class="nomeprojeto">Ages</h1></p>
-            <p>
-                Conhecimentos utilizados: PHP, JAVASCRIPT, HTML, CSS</br></br>
-                Meu primeiro grande projeto que desenvolvi para a Organização Militar a qual eu trabalhava
-                ele é um sistema ERP que auxilia a gerência das companhias, em resumo ele concentra toda a informação
-                sobre o militar relacionado à saúde/dispensas/companhias/missões e documenta todas as alterações que ocorreram
-                com cada indivíduo, utiliza isso para montar uma escala que respeite a folga de serviço e o bem estar do militar.</br>
-                Os resultados foram bem satisfatórios, em questão da documentação excluiu a necessidade de livros físicos e
-                acelerou em mais de 30% a velocidade de documentos, e eliminou a necessidade de montagem de escala manual.
-            </p>
+    <div class="flexbox">
+        <div id="Ages" title="Basic dialog" class="popup">
+            <p>PHP, JAVASCRIPT, HTML, CSS
+            </br>_________________________________________</br></br>
+                Ages foi criado para servir como um sistema ERP para escalas de serviço e
+                acompanhamento da situação dos militares, com a intuição de agilizar e automatizar as escalas,
+                suas funcionalidades atuais contam com, criar escalas de serviço, adicionar militares,
+                gerenciar a que escala pertence cada militar e histórico de missões/saúde e dispensas,
+                conta com 3 niveis de contas, distribuídas entre administrador, sargenteante e médico,
+                em funcionalidades futuras será gerada uma sugestão de escala automaticamente levando em
+                consideração a folga e a disponibilidade de cada militar, gerará escalas automaticamente de acordo
+                com as alterações que ocorrerem em relação a dispensas e missões. </p>
+            <a href="https://github.com/LucasArend/Ages">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <a href="javascript: fechar('Ages')">Fechar</a>
         </div>
-        <div class="projetodireita">
-            <a href="https://github.com/LucasArend/copia-chatGPT"><img src="./src/imagens/Chatgpt.png"></a>
-            <p><h1 class="nomeprojeto">Cópia do chatGPT</h1></p>
-            <p>Conhecimentos utilizados: JAVASCRIPT, HTML, CSS, NODEJS</br></br>
-                Cópia do famoso chatGPT, com todas as funcionalidades, as instruiçoes de uso estão em meu
-                github só precisa clicar na imagem ao lado, fiz ele com o intuito de aprimorar meu entendimento com
-                NODEJS e JAVASCRIPT                
-            </p>
+        <div class="gridflex " >
+            <div class="itemflexleft" style=" background-image: url(./src/imagens/Ages.png); background-size: cover;">
+                <div class="overlay ages" >
+                    <!-- style="background-image: url(./src/imagens/Detalhes\ individuo.png); background-size: cover;" -->
+                    <button class="link" onclick="abrir('Ages')">Ages</button>
+                </div>
+            </div>
         </div>
-        <div class="projetoesquerda">
-            <a href="https://github.com/LucasArend/projeto-the-last-of-us"><img src="./src/imagens/thelast.png"></a>
-            <p><h1 class="nomeprojeto">carrossel The Last of Us</h1></p>
-            <p>Conhecimentos utilizados: HTML, CSS</br></br>
-                Um layout simples para treinar minhas habilidade em CSS e HTML, ele conta com sombreamento de imagens
-                e um carrossel que passa imagens sobre o filme pós apocalíptico.
-            </p>
+        <div id="chatgpt" title="Basic dialog" class="popup">
+            <a href="javascript: fechar('chatgpt')"><button class="botaofecha"></button></a>
+            <p>PHP, JAVASCRIPT, HTML, CSS 
+            </br>_________________________________________</br></br>
+                Ages foi criado para servir como um sistema ERP para escalas de serviço e
+                acompanhamento da situação dos militares, com a intuição de agilizar e automatizar as escalas,
+                suas funcionalidades atuais contam com, criar escalas de serviço, adicionar militares,
+                gerenciar a que escala pertence cada militar e histórico de missões/saúde e dispensas,
+                conta com 3 niveis de contas, distribuídas entre administrador, sargenteante e médico,
+                em funcionalidades futuras será gerada uma sugestão de escala automaticamente levando em
+                consideração a folga e a disponibilidade de cada militar, gerará escalas automaticamente de acordo
+                com as alterações que ocorrerem em relação a dispensas e missões. </p>
+            <a href="https://github.com/LucasArend/Ages">Veja mais sobre Ages no meu GitHub! </a></br></br>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexright">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('chatgpt')">chatgpt</button>
+                  </div>
+            </div>
+        </div>
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto spam.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexleft">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                  </div>
+            </div>
+        </div>
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto sobre chatgpt.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexright">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                  </div>
+            </div>
+        </div>
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto sobre chatgpt.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexleft">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                  </div>
+            </div>
+        </div>
+        
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto sobre chatgpt.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexright">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                  </div>
+            </div>
+        </div>
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto sobre chatgpt.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexleft">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                  </div>
+            </div>
+        </div>
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto sobre chatgpt.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexright">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                  </div>
+            </div>
+        </div>
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto sobre chatgpt.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexleft">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                  </div>
+            </div>
+        </div>
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto sobre chatgpt.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexright">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                  </div>
+            </div>
+        </div>
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto sobre chatgpt.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexleft">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                  </div>
+            </div>
+        </div>
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto sobre chatgpt.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexright">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                  </div>
+            </div>
+        </div>
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto sobre chatgpt.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexleft">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                  </div>
+            </div>
+        </div>
+        <div id="spam" title="Basic dialog" class="popup">
+            <p>Texto de spam.</p>
+            <a href="javascript: fechar('spam')">Fechar</a>
+        </div>
+        <div class="gridflex">
+            <div class="itemflexright">
+                <div class="overlay">
+                    <button class="link" onclick="abrir('spam')">Spam</button>
+                </div>
+            </div>
         </div>
     </div>
-    <img src="./src/imagens/desmaiadobotright.png" alt="vetor em baixo a direita"  class="vectorrightbot">
-      <span class="target"></span>
-</main>    
-<script  src="./src/js/script.js"></script>
+    <div><img src="./src/imagens/desmaiadobotright.png" alt="vetor em baixo a direita"  class="vectorrightbot"></div>
+    <span class="target"></span>
+    <script src="./src/js/scriptproject.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>

@@ -1,13 +1,13 @@
-body{
-    background-color: rgb(49, 49, 49);
-
-}
-
 .flexbox{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 
+}
+
+img{
+  width: 300px;
+  height: 180px;
 }
 
 .gridflex{
@@ -27,7 +27,6 @@ body{
     box-shadow: 20px 10px 10px;
     display: flex;
     align-items: end;
-    
 }
 
 .itemflexright{
@@ -62,13 +61,13 @@ body{
 
   
   .overlay {
-    background: rgba(0, 0, 0, 0.068);
+    background: rgba(0, 0, 0, 0.705);
     text-align: center;
     border-radius: 20px 10px;
     /*padding: 45px 0 66px 0;*/
     opacity: 0;
-    -webkit-transition: opacity .25s ease;
-    -moz-transition: opacity .25s ease;
+    -webkit-transition: opacity 0.55s ease;
+    -moz-transition: opacity 0.55s ease;
     width: 300px;
     height: 180px;
     float: inline-end;
@@ -84,14 +83,13 @@ body{
   }
 
   .itemflexright:hover .overlay{
-    opacity: 1;
+    opacity: 1.0;
   }
 
   .itemflexright:hover{
     opacity: 1;
     box-shadow: 20px 10px 10px #000000, 0 0 40px #000000, 0 0 70px #000a0e;
   }
-
 
   .popup{
     position:absolute;
@@ -114,9 +112,9 @@ body{
     font-family: Helvetica;
     font-weight: 900;
     font-size: 16px;
-    background-color: transparent;
+    background-color: rgb(0, 0, 0, 0.0);
     border: 0;
-    color: rgb(255, 255, 255);
+    color: rgb(240, 240, 240);
     cursor: pointer;
     display: inline-block;
     padding: 0;
@@ -292,3 +290,33 @@ body{
        transform: translateX(0);
    }
  }
+
+ .ages{
+  background-image: url(../imagens/Detalhes\ individuo.png);
+  background-size:contain;
+  border-radius: 20px 10px;
+}
+
+.ages::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px 7px;
+}
+
+.botaofecha{
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-top: 25px solid #0000001f;
+  border-bottom: 25px solid #4C4B63;
+  border-left: 25px solid #4C4B63;
+  border-right: 25px solid #0000001f;
+  padding: 0;
+}
