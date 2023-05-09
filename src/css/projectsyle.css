@@ -5,11 +5,6 @@
 
 }
 
-img{
-  width: 300px;
-  height: 180px;
-}
-
 .gridflex{
  width: 49%;
  /*border:1px solid rgb(223, 22, 22);*/
@@ -96,7 +91,7 @@ img{
     background: white;
     width: 400px;
     height: 400px;
-    border: solid 1px black;
+    border: solid 1px #1a1e22d2;
     padding: 15px;
     display:none;
     z-index: 99;
@@ -105,8 +100,196 @@ img{
     left:50%;
     transform: translate(-50%, -50%);
     border-radius: 10px 10px;
+    /* border-top-right-radius: 0 0; */
     /* animation: fadeInLeft 1.2s; */
   }
+
+  .label {
+    position: absolute;
+    top: 20px;
+    right: -16px;
+    padding: 5px 20px;
+    color: #fafafa;
+    background: teal;
+    font-weight: 700;
+    max-width: 70%; /* Ajustado para textos muito grandes */
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .label::after {
+    position: absolute;
+    content: '';
+    bottom: -6px;
+    right: 0;
+    border-style: solid;
+    border-top-width: 3px;
+    border-left-width: 8px;
+    border-bottom-width: 3px;
+    border-right-width: 8px;
+    border-top-color: teal;
+    border-left-color: teal;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    filter: brightness(50%);
+  }
+
+  .label-both {
+    position: absolute;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    top: 20px;
+    right: -16px;
+    left: -16px;
+    background: #454545;
+    color: rgba(255, 255, 255, 0.712);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .label-both::before, .label-both::after {
+    position: absolute;
+    content: '';
+    bottom: -6px;
+    border-style: solid;
+    border-top-width: 3px;
+    border-left-width: 8px;
+    border-bottom-width: 3px;
+    border-right-width: 8px;
+    filter: brightness(80%);
+  }
+  
+  .label-both::after {
+    right: 0;
+    border-top-color: rgb(109, 100, 100);
+    border-left-color: rgb(109, 100, 100);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+  }
+  
+  .label-both::before {
+    left: 0;
+    border-top-color: rgb(109, 100, 100);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: rgb(109, 100, 100);
+  }
+
+  .label-center {
+    position: absolute;
+    padding: 5px 20px;
+    color: #fafafa;
+    background: teal;
+    font-weight: 700;
+    max-width: 70%; /* Ajustado para textos muito grandes */
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+    bottom: 40px;
+  }
+
+  .label-center-1{
+    left: 28%;
+  }
+
+  .label-center-2{
+    left: 55%;
+  }
+
+  .label-center-3{
+    left: 65%;
+  }
+
+
+  .label-left{
+    top: auto;
+    right: auto;
+    left: -16px;
+  }
+
+  .label-left-1 {
+    bottom: 40px;
+  }
+
+  .label-left-2 {
+    bottom: 20px;
+  }
+
+  .label-left-3 {
+    bottom: 0px;
+  }
+
+  .label-right-1{
+    top: auto;
+    left: auto;
+    right: -16px;
+    bottom: 40px;
+  }
+  
+  .label-left::after {
+    right: auto;
+    left: 0;
+    border-top-color: teal;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: teal;
+  }
+
+  .label-php {
+    background: rgb(131, 123, 238);
+    color: #fafafa;
+  }
+  
+  .label-php::after {
+    border-top-color: rgb(161, 148, 250);
+    border-right-color: rgb(152, 141, 248);
+    filter: brightness(50%);
+  }
+
+  .label-html {
+    background: rgb(184, 113, 20);
+    color: #fafafa;
+  }
+  
+  .label-html::after {
+    border-top-color: rgb(247, 211, 50);
+    border-left-color: rgb(247, 211, 50);
+    filter: brightness(50%);
+  }
+
+  .label-css {
+    background: rgb(77, 101, 241);
+    color: #fafafa;
+  }
+  
+  .label-css::after {
+    border-top-color: deeppink;
+    border-left-color: deeppink;
+    filter: brightness(50%);
+  }
+
+  .label-js {
+    background: rgb(255, 251, 20);
+    color: #000000;
+  }
+  
+  .label-js::after {
+    border-top-color: deeppink;
+    border-left-color: deeppink;
+    filter: brightness(50%);
+  }
+  /* Dobrinha de papel no canto direito em cima */
+   /* .popup::after{
+    position: absolute;
+    content: '';
+    right: 0px;
+    top: 0px;
+    background-color: #1a1e22d2;
+   }
+   
+   .popup:hover:after {
+    transition-duration: 1s;
+    border-bottom: 50px solid rgba(156, 152, 152, 0.432);
+    border-right: 50px solid  transparent;
+    z-index: 0;
+  } */
   
    .link {
     font-family: Helvetica;
@@ -312,11 +495,7 @@ img{
   right: 0;
   top: 0;
   position: absolute;
-  width: 0; 
-  height: 0; 
-  border-top: 25px solid #0000001f;
-  border-bottom: 25px solid #4C4B63;
-  border-left: 25px solid #4C4B63;
-  border-right: 25px solid #0000001f;
+  width: 20px;
+  height: 20px;
   padding: 0;
 }
