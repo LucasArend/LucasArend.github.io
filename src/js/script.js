@@ -4,7 +4,7 @@
 
   const target = document.querySelector(".target");
   const links = document.querySelectorAll(".mynav .abas a");
-  const colors = ["rgb(209, 190, 53)"];/*, "orange", "firebrick", "gold", "magenta", "black", "darkblue"*/
+  const colors = ["#2272FF"];/*, "orange", "firebrick", "gold", "magenta", "black", "darkblue"*/
 
   function mouseenterFunc() {
     if (!this.parentNode.classList.contains("active")) {
@@ -82,3 +82,4 @@ function addClass(element, className) {
       element.className += " " + className;
   }
 }
+

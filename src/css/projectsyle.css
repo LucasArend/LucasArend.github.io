@@ -88,7 +88,7 @@
 
   .popup{
     position:absolute;
-    background: white;
+    background: rgb(241, 241, 241);
     width: 400px;
     height: 400px;
     border: solid 1px #1a1e22d2;
@@ -103,6 +103,21 @@
     /* border-top-right-radius: 0 0; */
     /* animation: fadeInLeft 1.2s; */
   }
+
+  .popup-white{
+    color: white;
+    background: rgb(43, 41, 41);
+  }
+
+  .popup-white a:link{
+    color: white;
+  }
+
+  .popup-white a:visited{
+    color: white;
+  }
+
+
 
   .label {
     position: absolute;
@@ -275,6 +290,17 @@
     border-left-color: deeppink;
     filter: brightness(50%);
   }
+
+  .label-nodejs {
+    background: rgb(63, 150, 24);
+    color: #f7f7f7;
+  }
+  
+  .label-nodejs::after {
+    border-top-color: rgb(20, 255, 71);
+    border-right-color: rgb(71, 221, 71);
+    filter: brightness(50%);
+  }
   /* Dobrinha de papel no canto direito em cima */
    /* .popup::after{
     position: absolute;
@@ -291,6 +317,16 @@
     z-index: 0;
   } */
   
+  .popupcloser {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: ' ';
+    background: rgba(0,0,0,.5);
+  }
+
    .link {
     font-family: Helvetica;
     font-weight: 900;

@@ -48,28 +48,13 @@ const animationLeft = (entries) => {
     
   });
 
-//    function abrir(id) {
-//     document.getElementById(id).style.display='block';
-// };
+   function abrir(id) {
+    document.getElementById(id).style.display='block';
+};
 
-// function fechar(id) {
-//      document.getElementById(id).style.display='none';
-//  };
-
-$(function(){
-  $("#buttonAges").click(function(e){       
-      e.stopPropagation();
-      $("#Ages").show();
-      $("body").click(function(e){
-          if(e.target.id != "Ages")
-          {
-              $("#Ages").hide();
-              $("body").unbind("click");
-          }
-      });
-  });
-  
-});
+function fechar(id) {
+     document.getElementById(id).style.display='none';
+ };
 
  (function () {
 

@@ -51,7 +51,7 @@
     </header>
     <img src="./src/imagens/desmaiadotopleft.png" alt="vetor em cima a esquerda"  class="vectorlefttop">
     <div class="flexbox">
-        <div id="Ages" title="Basic dialog" class="popup">
+        <div id="Ages" title="AGES" class="popup">
             <div class="label-both">AGES - Auxiliar de Gerencia para Sargenteação</div>
             <div class="label label-left-1 label-left label-php">PHP</div>
             <div class="label-center label-center-1 label-js">JS</div>
@@ -74,13 +74,18 @@
             <div class="itemflexleft" style=" background-image: url(./src/imagens/Ages.png); background-size: cover;">
                 <div class="overlay ages" >
                     <!-- style="background-image: url(./src/imagens/Detalhes\ individuo.png); background-size: cover;" -->
-                    <button class="link" id="buttonAges">AGES</button>
+                    <button class="link" onclick="abrir('Ages')">Ages</button>
                 </div>
             </div>
         </div>
-        <div id="chatgpt" title="Basic dialog" class="popup">
+        <div id="chatgpt" title="Basic dialog" class="popup popup-white">
             <a href="javascript: fechar('chatgpt')"><button class="botaofecha">X</button></a>
-            <p>PHP, JAVASCRIPT, HTML, CSS 
+            <div class="label-both">ChatGPT(Copia)</div>
+            <div class="label label-left-1 label-left label-nodejs">NodeJS</div>
+            <div class="label-center label-center-1 label-js">JS</div>
+            <div class="label-center label-center-2 label-css">CSS</div>
+            <div class="label label-right-1 label-html">HTML</div>
+            <p>
             </br>_________________________________________</br></br>
                 Ages foi criado para servir como um sistema ERP para escalas de serviço e
                 acompanhamento da situação dos militares, com a intuição de agilizar e automatizar as escalas,

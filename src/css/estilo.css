@@ -1,12 +1,44 @@
 body {
     margin: 0px;
-    background: #1a1e22d2;
+    background: #1D1D1D;
+    overflow: hidden;
 }
 
 .header {
     width: 100%;
     margin-top: 50px;
 }
+
+svg {
+   position: absolute;
+   z-index: -99;
+ }
+
+.leftcorner{
+    top: 50%;
+    left: 50%;
+    transform: translate(-82%, -20%) rotate(180deg);
+}
+ 
+ .path {
+   animation: draw 14s infinite;
+   animation-timing-function: linear;
+ }
+ 
+ .path-2 {
+   animation: draw 14s infinite;
+   animation-delay: 1s;
+   animation-timing-function: linear;
+ }
+ 
+ @keyframes draw {
+   0% {
+   }
+   100% {
+     stroke-dashoffset: 0;
+     stroke-opacity: 1;
+   }
+ }
 /*header antigo sem animaçoes*/
 /* .header .abas{
     padding-left: 28%;
@@ -149,7 +181,7 @@ margin-right: 100px;
     border-style: solid;
     padding: 5%;
     border-image: 
-    linear-gradient(transparent 0%, rgb(209, 173, 53) 50%, transparent 100%) 0 0 0 100;
+    linear-gradient(transparent 0%, #2272FF 50%, transparent 100%) 0 0 0 100;
     display: flex;
     text-align: justify;
 }
