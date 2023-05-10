@@ -66,6 +66,7 @@
     width: 300px;
     height: 180px;
     float: inline-end;
+    visibility: hidden;
   }
 
   .overlay::before{
@@ -81,6 +82,7 @@
 
   .itemflexleft:hover .overlay{
     opacity: 1;
+    visibility: visible;
   }
 
   .itemflexleft:hover{
@@ -90,6 +92,7 @@
 
   .itemflexright:hover .overlay{
     opacity: 1.0;
+    visibility: visible;
   }
 
   .itemflexright:hover{
