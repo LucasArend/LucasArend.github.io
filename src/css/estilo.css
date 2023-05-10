@@ -1,6 +1,9 @@
 body {
     margin: 0px;
     background: #1D1D1D;
+}
+
+.index{
     overflow: hidden;
 }
 
@@ -19,6 +22,12 @@ svg {
     left: 50%;
     transform: translate(-82%, -20%) rotate(180deg);
 }
+
+.rightcorner{
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, 10%) rotate(270deg); 
+}
  
  .path {
    animation: draw 14s infinite;
@@ -27,7 +36,6 @@ svg {
  
  .path-2 {
    animation: draw 14s infinite;
-   animation-delay: 1s;
    animation-timing-function: linear;
  }
  
