@@ -590,6 +590,22 @@
   border-radius: 20px 10px;
 }
 
+.circuit{
+  background-image: url(../imagens/Circuit.gif);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: 300px 180px;
+  border-radius: 20px 10px;
+}
+
+.barra{
+  background-image: url(../imagens/bar.gif);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: 300px 180px;
+  border-radius: 20px 10px;
+}
+
 .botaofecha{
   right: 0;
   top: 0;
