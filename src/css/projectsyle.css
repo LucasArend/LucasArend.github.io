@@ -542,14 +542,51 @@
 } */
 
 .tlou{
-  background-image: url(../imagens/tlou2.png);
-  background-size:cover;
+  background-image: url(../imagens/tlou.gif);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: 300px 180px;
   border-radius: 20px 10px;
 }
 
 .chatgpt{
   background-image: url(../imagens/Chatgpt.png);
   background-size:cover;
+  border-radius: 20px 10px;
+}
+
+.cubegif{
+  background-image: url(../imagens/cube3D.gif);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: 300px 180px;
+  border-radius: 20px 10px;
+}
+
+.shadowboxgif{
+  background-image: url(../imagens/shadowboxes.gif);
+  border-radius: 20px 10px;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: 300px 180px;
+}
+.overlay.shadowboxgif::before{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scroll{
+  background-image: url(../imagens/animation.gif);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: 300px 180px;
+  border-radius: 20px 10px;
+}
+
+.alphagames{
+  background-image: url(../imagens/gamemaster.gif);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: 300px 180px;
   border-radius: 20px 10px;
 }
 
