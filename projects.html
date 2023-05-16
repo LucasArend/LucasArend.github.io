@@ -50,15 +50,13 @@
         </nav>
     </header>
     <!-- <img src="./src/imagens/desmaiadotopleft.png" alt="vetor em cima a esquerda"  class="vectorlefttop"> -->
-    <div class="flexbox">
-
+    <div class="flexbox" id="teste">
         <div id="Ages" title="AGES" class="popup">
             <div class="label-both">AGES - Auxiliar de Gerencia para Sargenteação</div>
             <div class="label label-left-1 label-left label-php">PHP</div>
             <div class="label-center label-center-1 label-js">JS</div>
             <div class="label-center label-center-2 label-css">CSS</div>
             <div class="label label-right-1 label-html">HTML</div>
-            <a href="javascript: fechar('Ages')"><button class="botaofecha">X</button></a>
             <p>
             </br>___________________________________________________</br></br>
                 Ages foi criado para servir como um sistema ERP para escalas de serviço e
@@ -70,7 +68,9 @@
                 consideração a folga e a disponibilidade de cada militar, gerará escalas automaticamente de acordo
                 com as alterações que ocorrerem em relação a dispensas e missões. </p>
             <a href="https://github.com/LucasArend/Ages">Veja mais sobre Ages neste link! </a></br></br>
+            <div class="closepopup " onclick="fechar('Ages')"></div>
         </div>
+
         <div class="gridflex " >
             <div class="itemflexleft" style=" background-image: url(./src/imagens/Ages.png); background-size: cover;">
                 <div class="overlay ages " >
@@ -80,7 +80,6 @@
         </div>
 
         <div id="chatgpt" title="Basic dialog" class="popup">
-            <a href="javascript: fechar('chatgpt')"><button class="botaofecha">X</button></a>
             <div class="label-both">ChatGPT(Copia)</div>
             <div class="label label-left-1 label-left label-nodejs">NodeJS</div>
             <div class="label-center label-center-1 label-js">JS</div>
@@ -88,10 +87,13 @@
             <div class="label label-right-1 label-html">HTML</div>
             <p>
             </br>___________________________________________________</br></br>
-                Uma copia do chatGPT utilizando a api da openAI, possui todas as funcionalidades do site original.
-                as instruiçoes de uso podem ser encontradas <a href="https://github.com/LucasArend/Ages">Aqui!</a></br></br>
+            Uma cópia do chatGPT utilizando a api da openAI, possui todas as funcionalidades do site original.
+            as instruções de uso podem ser encontradas
+            <a href="https://github.com/LucasArend/copia-chatGPT">Aqui!</a></br></br>
             </p>
+            <div class="closepopup " onclick="fechar('chatgpt')"></div>
         </div>
+
         <div class="gridflex">
             <div class="itemflexright " style=" background-image: url(./src/imagens/ChatGPT1.png); background-size: contain;">
                 <div class="overlay chatgpt">
@@ -101,17 +103,15 @@
         </div>
 
         <div id="tlou" title="tlou" class="popup">
-            <a href="javascript: fechar('tlou')"><button class="botaofecha">X</button></a>
             <div class="label-both">The last of US</div>
-            <div class="label label-left-1 label-left label-nodejs">NodeJS</div>
-            <div class="label-center label-center-1 label-js">JS</div>
-            <div class="label-center label-center-2 label-css">CSS</div>
+            <div class="label label-left-1 label-left label-css">CSS</div>
             <div class="label label-right-1 label-html">HTML</div>
             <p>
             </br>___________________________________________________</br></br>
-            Site simples feito para praticar e homenagear a serie The Last Of US!    
+            Site simples feito para praticar e homenagear a série The Last Of US!
             </p>
-            <a href="https://github.com/LucasArend/Ages">Veja mais sobre o site neste link! </a></br></br>
+            <a href="https://github.com/LucasArend/projeto-the-last-of-us">Veja mais sobre o site neste link! </a></br></br>    
+            <div class="closepopup " onclick="fechar('tlou')"></div>
         </div>
         <div class="gridflex">
             <div class="itemflexleft" style=" background-image: url(./src/imagens/thelast.png); background-size: cover;">
@@ -124,15 +124,15 @@
         <div id="cube" title="cube" class="popup">
             <a href="javascript: fechar('cube')"><button class="botaofecha">X</button></a>
             <div class="label-both">Cubo 3D</div>
-            <div class="label label-left-1 label-left label-nodejs">NodeJS</div>
-            <div class="label-center label-center-1 label-js">JS</div>
+            <div class="label label-left-1 label-left label-js">JS</div>
             <div class="label-center label-center-2 label-css">CSS</div>
             <div class="label label-right-1 label-html">HTML</div>
             <p>
             </br>___________________________________________________</br></br>
-            Cubo em 3D para demonstrar algumas animaçoes que podem ser feitas utilizando css
+            Cubo em 3D para demonstrar algumas animações que podem ser feitas utilizando css
             </p>
             <a href="https://github.com/LucasArend/layouts/tree/main/Cube">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <div class="closepopup " onclick="fechar('cube')"></div>
         </div>
         <div class="gridflex">
             <div class="itemflexright" style=" background-image: url(./src/imagens/cube.png); background-size: cover;">
@@ -143,21 +143,20 @@
         </div>
 
         <div id="animationin" title="animationin" class="popup">
-            <a href="javascript: fechar('animationin')"><button class="botaofecha">X</button></a>
             <div class="label-both">Animação de entrada</div>
-            <div class="label label-left-1 label-left label-nodejs">NodeJS</div>
-            <div class="label-center label-center-1 label-js">JS</div>
+            <div class="label label-left-1 label-left label-js">JS</div>
             <div class="label-center label-center-2 label-css">CSS</div>
             <div class="label label-right-1 label-html">HTML</div>
             <p>
             </br>___________________________________________________</br></br>
-            Repositorio da animação utilizada nesta pagina!, possui um javascript que carraga as animaçoes baseado
-            na rolagem da pagina, e também como foi feito a separação das animaçoes do lado direito e esquerdo
+            Repositório da animação utilizada nesta página!, possui um javascript que carrega as animações baseado
+            na rolagem da página, e também como foi feito a separação das animações do lado direito e esquerdo
             </p>
-            <a href="https://github.com/LucasArend/Ages">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <a href="https://github.com/LucasArend/layouts/tree/main/shadowboxes">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <div class="closepopup " onclick="fechar('animationin')"></div>
         </div>
         <div class="gridflex">
-            <div class="itemflexleft" style=" background-image: url(https://github.com/LucasArend/layouts/tree/main/shadowboxes); background-size: cover;">
+            <div class="itemflexleft" style=" background-image: url(./src/imagens/shadowboxes.png); background-size: cover;">
                 <div class="overlay shadowboxgif">
                     <button class="link" onclick="abrir('animationin')">Animação de entrada</button>
                   </div>
@@ -165,18 +164,15 @@
         </div>
 
         <div id="rpg" title="RPG" class="popup">
-            <a href="javascript: fechar('rpg')"><button class="botaofecha">X</button></a>
             <div class="label-both">NPC de RPG 2d6</div>
-            <div class="label label-left-1 label-left label-nodejs">NodeJS</div>
-            <div class="label-center label-center-1 label-js">JS</div>
-            <div class="label-center label-center-2 label-css">CSS</div>
-            <div class="label label-right-1 label-html">HTML</div>
+            <div class="label label-right-1 label-html">Python</div>
             <p>
             </br>___________________________________________________</br></br>
-                Programa feito em python para me auxiliar em uma mesa de RPG que mestrei, ele cria nomes,vantagens
-                desvantagens e define a personalidade, o nivel e a quantia gerada podem ser ajustados    
+            Programa feito em python para me auxiliar em uma mesa de RPG que mestrei, ele cria nomes,vantagens
+            desvantagens e define a personalidade, o nível e a quantia gerada podem ser ajustados
             </p>
-            <a href="https://github.com/LucasArend/Ages">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <a href="https://github.com/LucasArend/Desafios/blob/main/GeradorV2">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <div class="closepopup " onclick="fechar('rpg')"></div>
         </div>
         <div class="gridflex">
             <div class="itemflexright" style=" background-image: url(./src/imagens/script.png); background-size: cover;">
@@ -187,19 +183,18 @@
         </div>
 
         <div id="animationcircuit" title="Animação" class="popup">
-            <a href="javascript: fechar('animationcircuit')"><button class="botaofecha">X</button></a>
             <div class="label-both">Circuitos</div>
-            <div class="label label-left-1 label-left label-nodejs">NodeJS</div>
-            <div class="label-center label-center-1 label-js">JS</div>
-            <div class="label-center label-center-2 label-css">CSS</div>
+            <div class="label label-left-1 label-left label-css">CSS</div>
             <div class="label label-right-1 label-html">HTML</div>
             <p>
             </br>___________________________________________________</br></br>
-            Animação vetorial de polyline simulando circuitos eletronicos, essas foram as animaçoes que eu utilizei
-            na pagina inicial deste Portifolio      
+            Animação vetorial de polyline simulando circuitos eletrônicos, essas foram as animações que eu utilizei
+            na página inicial deste Portfólio      
         </p>
-            <a href="https://github.com/LucasArend/Ages">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <a href="https://github.com/LucasArend/layouts/tree/main/circuit">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <div class="closepopup " onclick="fechar('animationcircuit')"></div>
         </div>
+
         <div class="gridflex">
             <div class="itemflexleft" 
             style=" background-image: url(./src/imagens/circuit.png);
@@ -213,19 +208,19 @@
         </div>
 
         <div id="scroll" title="Scrolldown" class="popup">
-            <a href="javascript: fechar('scroll')"><button class="botaofecha">X</button></a>
             <div class="label-both">Scroll Animation</div>
-            <div class="label label-left-1 label-left label-nodejs">NodeJS</div>
-            <div class="label-center label-center-1 label-js">JS</div>
+            <div class="label label-left-1 label-left label-js">JS</div>
             <div class="label-center label-center-2 label-css">CSS</div>
             <div class="label label-right-1 label-html">HTML</div>
             <p>
             </br>___________________________________________________</br></br>
-                Um Repositorio mais didatico sobre o funcionamento da animação ao rolar a tela, tem um layout mais simples
-                ficando mais facil de se entender como funciona a animação
+            Um Repositório mais didático sobre o funcionamento da animação ao rolar a tela, tem um layout mais simples
+            ficando mais fácil de se entender como funciona a animação
             </p>
-            <a href="https://github.com/LucasArend/Ages">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <a href="https://github.com/LucasArend/layouts/tree/main/animationjava">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <div class="closepopup " onclick="fechar('scroll')"></div>
         </div>
+
         <div class="gridflex">
             <div class="itemflexright" 
             style=" background-image: url(./src/imagens/scroll.png);
@@ -239,17 +234,16 @@
         </div>
 
         <div id="barra" title="Barraexp" class="popup">
-            <a href="javascript: fechar('barra')"><button class="botaofecha">X</button></a>
             <div class="label-both">Barra de experiencia</div>
-            <div class="label label-left-1 label-left label-nodejs">NodeJS</div>
-            <div class="label-center label-center-1 label-js">JS</div>
+            <div class="label label-left-1 label-left label-js">JS</div>
             <div class="label-center label-center-2 label-css">CSS</div>
             <div class="label label-right-1 label-html">HTML</div>
             <p>
             </br>___________________________________________________</br></br>
                 Barra animada que utilizei para demonstrar minha auto-avaliação sobre meus conhecimentos sobre as linguagens.
             </p>
-            <a href="https://github.com/LucasArend/Ages">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <a href="https://github.com/LucasArend/layouts/tree/main/bar">Veja mais sobre Ages no meu GitHub! </a></br></br>
+            <div class="closepopup " onclick="fechar('barra')"></div>
         </div>
         <div class="gridflex">
             <div class="itemflexleft" 
@@ -264,9 +258,8 @@
         </div>
 
         <div id="alphagames" title="Site de jogos" class="popup">
-            <a href="javascript: fechar('alphagames')"><button class="botaofecha">X</button></a>
             <div class="label-both">Alpha Games</div>
-            <div class="label label-left-1 label-left label-nodejs">NodeJS</div>
+            <div class="label label-left-1 label-left label-php">PHP</div>
             <div class="label-center label-center-1 label-js">JS</div>
             <div class="label-center label-center-2 label-css">CSS</div>
             <div class="label label-right-1 label-html">HTML</div>
@@ -277,7 +270,8 @@
                 para alugar e a pessoa interessada pode entra em contato pelo proprio site, marcando o local onde o jogo pode ser repassado
                 para facilitar a busca os jogos podem ser filtrados baseado na sua preferencia.
             </p>
-            <a href="https://github.com/LucasArend/Ages">Veja mais sobre gamemaster no meu GitHub! </a></br></br>
+            <a href="https://github.com/LucasArend/Games--master">Veja mais sobre gamemaster no meu GitHub! </a></br></br>
+            <div class="closepopup " onclick="fechar('alphagames')"></div>
         </div>
         <div class="gridflex">
             <div class="itemflexright" 
@@ -303,6 +297,7 @@
             </div>
         </div> -->
     </div>
+
     <!-- <div><img src="./src/imagens/desmaiadobotright.png" alt="vetor em baixo a direita"  class="vectorrightbot"></div> -->
     <span class="target"></span>
     <script src="./src/js/scriptproject.js"></script>

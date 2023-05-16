@@ -118,6 +118,8 @@
     /* animation: fadeInLeft 1.2s; */
   }
 
+  
+
   .popup-white{
     color: white;
     background: rgb(43, 41, 41);
@@ -131,7 +133,17 @@
     color: white;
   }
 
-
+  .closepopup{
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+    width: 250vh;
+    height: 200vh;
+    margin-left: -120%;
+    margin-right: -120%;
+    margin-top: -120%;
+    position: absolute;
+    cursor: pointer;
+  }
 
   .label {
     position: absolute;

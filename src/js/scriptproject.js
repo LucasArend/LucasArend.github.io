@@ -48,14 +48,6 @@ const animationLeft = (entries) => {
     
   });
 
-   function abrir(id) {
-    document.getElementById(id).style.display='block';
-};
-
-function fechar(id) {
-     document.getElementById(id).style.display='none';
- };
-
  (function () {
 
      const target = document.querySelector(".target");
@@ -109,3 +101,13 @@ function fechar(id) {
      window.addEventListener("resize", resizeFunc);
    
    })();
+
+function abrir(id) {
+  document.getElementById(id).style.display='block';
+  
+};
+
+function fechar(id) {
+   document.getElementById(id).style.display='none';
+};
+
