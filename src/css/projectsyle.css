@@ -567,6 +567,45 @@
   border-radius: 20px 10px;
 }
 
+.rentx{
+  background-image: url(../imagens/rentx.png);
+  background-size:contain;
+  border-radius: 20px 10px;
+}
+
+.testChallenge{
+  background-image: url(../imagens/Jest.png);
+  background-size:cover;
+  border-radius: 20px 10px;
+}
+
+.middlewares{
+  background-image: url(../imagens/Node.png);
+  background-size:cover;
+  border-radius: 20px 10px;
+}
+
+.correcao{
+  background-image: url(../imagens/Node.png);
+  background-size:cover;
+  border-radius: 20px 10px;
+}
+
+.queries{
+  background-image: url(../imagens/sql2.jpg);
+  background-size:cover;
+  border-radius: 20px 10px;
+}
+
+.solid{
+  background-image: url(../imagens/solid2.jpeg);
+  background-size: 300px 180px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px 10px;
+}
+
+
 .cubegif{
   background-image: url(../imagens/cube3D.gif);
   background-size:contain;
